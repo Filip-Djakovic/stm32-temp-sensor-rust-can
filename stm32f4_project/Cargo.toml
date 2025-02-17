@@ -1,0 +1,26 @@
+[package]
+name = "stm32f4_project"
+version = "0.1.0"
+edition = "2021"
+
+
+[profile.release]
+debug = true
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+cortex-m-semihosting = "0.3.7"
+panic-halt = "0.2.0"
+stm32f4xx-hal = { version = "0.10", features = ["can1","stm32f446"] }
+libm = "0.2"
+embedded-hal = "0.2"
+bxcan = "0.8.0"
+nb = "1.1"
+
+[profile.dev]
+debug = true
+opt-level = 0
+
+[package.metadata.cortex-m-rt]
+memory = "memory.x"
