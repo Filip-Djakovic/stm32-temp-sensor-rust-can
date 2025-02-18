@@ -36,3 +36,8 @@ Next, we run our executable file with command
 
 > [!NOTE]
 > **Note**:To successfully integrate the MCP2515 with the Raspberry Pi, we need to add the following lines to the boot/config.txt file
+
+```
+dtparam=spi=on
+dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
+```
