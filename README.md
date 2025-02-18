@@ -26,3 +26,7 @@ To execute our code on raspberry, we will run the following command
 sudo ip link set can0 up type can bitrate 50000
 ```
 With this command, we set bitrate on 50kbit/s
+Next, we run our executable file with command
+```
+./nameOfExecutableFile
+```
