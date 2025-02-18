@@ -30,3 +30,6 @@ Next, we run our executable file with command
 ```
 ./nameOfExecutableFile
 ```
+
+> [!NOTE]
+> **Note**: If we used SSH to connect to the Raspberry Pi, we will need to cross-compile our code for the ARM architecture. Once it is cross-compiled, we will copy it to the Raspberry Pi. The scp command can be used for copying.
