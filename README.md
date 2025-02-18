@@ -33,3 +33,6 @@ Next, we run our executable file with command
 
 > [!NOTE]
 > **Note**: If we used SSH to connect to the Raspberry Pi, we will need to cross-compile our code for the ARM architecture. Once it is cross-compiled, we will copy it to the Raspberry Pi. The scp command can be used for copying.
+
+> [!NOTE]
+> **Note**:To successfully integrate the MCP2515 with the Raspberry Pi, we need to add the following lines to the boot/config.txt file
