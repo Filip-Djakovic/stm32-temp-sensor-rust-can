@@ -1,6 +1,8 @@
 # stm32-temp-sensor-rust-can
 STM32 Temperature Reader with RUST and CAN Communication
 
+In this project, the implementation includes reading the temperature from the internal temperature sensor of the STM32 microcontroller. The temperature is sent via a CAN message to the Raspberry Pi for processing. Based on the temperature, the Raspberry Pi sends a signal CAN message to the microcontroller to determine whether to turn the LED on or off
+
 ## Running a program on STM32
 To execute our code on the STM32 microcontroller, we need the OpenOCD tool and the GDB debugger. 
 We will run the following commands
