@@ -41,3 +41,6 @@ Next, we run our executable file with command
 dtparam=spi=on
 dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
 ```
+
+> [!NOTE]
+> **Note**:The pin layout in the images/connection-scheme.png image is not correct; it was used that way to make the schematic easier to draw. The correct pin layout should be found in the datasheet
