@@ -4,3 +4,8 @@ STM32 Temperature Reader with RUST and CAN Communication
 ## Running a program on STM32
 To execute our code on the STM32 microcontroller, we need the OpenOCD tool and the GDB debugger. 
 We will run the following commands
+
+```
+openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg
+gdb-multiarch -q target/thumbv7em-none-eabihf/debug/stm32f4_project
+```
